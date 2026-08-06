@@ -1336,3 +1336,13 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+/* responsive-image-safeguard */
+picture { display: contents; }
+img { max-width: 100%; height: auto; }
+.card-banner img, .about-banner img, .project-card img, .hero-banner img { width: 100%; height: auto; display: block; }
+@media (max-width: 550px) {
+  .hero-banner { width: 100%; max-width: 100%; }
+  .about-banner { max-width: 100%; }
+  .project-list { padding-inline: 0; }
+}
